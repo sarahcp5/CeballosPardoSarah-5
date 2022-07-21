@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTD-8">
+        <meta http-equiv="X-UA-Compatible">
+        <meta name="viewport"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>Ingrese Producto</title>
+    </head>
+    <body>
+        <div class="container-fluid bg-light">
+            <h1 class="text-primary">Ingrese Producto</h1>
+                <form action="/productos" method="post">
+                    <h5 class="fst-italic">Nombre</h5>
+                    <input type="text" name="title" class="form-label"> 
+                    <h5 class="fst-italic">Precio</h5>
+                    <input type="text" name="price" class="form-label">
+                    <h5 class="fst-italic">Foto URL</h5>
+                    <input type="text" name="thumbnail" class="form-label">
+                    <br>
+                    <br>
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </form>
+            <br>
+            <br>
+            <div class="col-md-12 text-center">
+                <a href="/productos" class="btn btn-success">Lista de Productos</a>
+            </div>
+            <br>
+        </div>
+    </body>
+</html>

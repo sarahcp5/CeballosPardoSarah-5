@@ -1,0 +1,20 @@
+<div class="container-fluid bg-light">
+    <h1 class="text-primary">Ingrese Producto</h1>
+    <form action="/productos" method="post">
+        <h5 class="fst-italic">Nombre</h5>
+        <input type="text" name="title" class="form-label"> 
+        <h5 class="fst-italic">Precio</h5>
+        <input type="text" name="price" class="form-label">
+        <h5 class="fst-italic">Foto URL</h5>
+        <input type="text" name="thumbnail" class="form-label">
+        <br>
+        <br>
+        <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+    <br>
+    <br>
+    <div class="col-md-12 text-center">
+        <a href="/productos" class="btn btn-success">Lista de Productos</a>
+    </div>
+    <br>
+</div>
